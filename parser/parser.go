@@ -25,7 +25,7 @@ import (
 type Parser struct {
 	l *lexer.Lexer
 
-	curToken token.Token
+	curToken  token.Token
 	peekToken token.Token
 
 	errors []string
@@ -33,7 +33,7 @@ type Parser struct {
 
 func New(l *lexer.Lexer) *Parser {
 	p := &Parser{
-		l: l,
+		l:      l,
 		errors: []string{},
 	}
 
@@ -97,7 +97,7 @@ func (p *Parser) parseLetStatement() *ast.LetStatement {
 }
 
 func (p *Parser) parseReturnStatement() *ast.ReturnStatement {
-	stmt := &ast.ReturnStatement {Token: p.curToken }
+	stmt := &ast.ReturnStatement{Token: p.curToken}
 
 	p.nextToken()
 
