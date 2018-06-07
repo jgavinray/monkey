@@ -3,6 +3,8 @@ The Monkey Programming language:
 
 This is an implementation of an interpreter for the Monkey programming language.  This toy language is the brain child of Thorsten Ball, and is documented in his book [Writing and Interpreter in Go](https://interpreterbook.com/).  
 
+[![Build Status](https://travis-ci.org/jgavinray/monkey.svg?branch=master)](https://travis-ci.org/jgavinray/monkey)
+
 ## Getting Started
 There isn't much needed to test/use this code.  All of the tooling needed is built into the Go Programming language, you will need to follow the [getting started](https://golang.org/doc/install) guide to get everything running on your computer.  After following the installation instructions, head to the directory your [GOPATH](https://golang.org/doc/code.html) and go through the following steps.
 
