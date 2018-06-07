@@ -1,0 +1,14 @@
+dist: trusty
+
+branches:
+  only:
+  - master
+
+language: go
+
+go:
+  - "1.x"
+
+script:
+  - cd ${TRAVIS_BUILD_DIR}
+  - ./build.sh
